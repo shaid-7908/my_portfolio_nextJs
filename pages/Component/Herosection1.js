@@ -1,11 +1,20 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Profile from '../../Images/Profile.jpg'
+import { AnimatePresence } from 'framer-motion'
+import { useRouter } from 'next/navigation'
+import {motion} from 'framer-motion'
+import TransitionPage from './Transitionpage'
 
 export default function Herosection1() {
+    const router = useRouter()
+
   return (
-    <div className='herosectionBg'>
+    <AnimatePresence mode='wait'>
+    <motion.div key={router.route} className='herosectionBg'>
+        <TransitionPage/>
         <div className='containerWrap2'>
          
         <div className='p-3 flex justify-start items-center font-popins relative '>
@@ -52,6 +61,7 @@ export default function Herosection1() {
 
 
         </div>
-    </div>
+    </motion.div>
+    </AnimatePresence>
   )
 }
