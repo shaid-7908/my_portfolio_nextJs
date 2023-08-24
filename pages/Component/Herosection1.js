@@ -15,7 +15,7 @@ export default function Herosection1() {
   return (
     <AnimatePresence mode='wait'>
     <motion.div key={router.route} className='herosectionBg'>
-        <TransitionPage/>
+        {/* <TransitionPage/> */}
         <div className='containerWrap2'>
          
         <div className='p-3 flex justify-start items-center font-popins relative '>
