@@ -20,7 +20,7 @@ export default function Herosection1() {
         <div className='p-3 flex justify-start items-center font-popins relative '>
                 <h1 className='text-2xl text-[#ccf381] font-bold tracking-wider mx-4'>BengaliCoder</h1>
                {/* <Navbar barcolor="#ccf381"/> */}
-                <div className='hidden lg:block'>
+                <nav className='hidden lg:block'>
                     <ul className='flex justify-around text-lgn tracking-wider font-semibold '>
                         <Link href='/' className='mx-4 text-[#ccf381]'>Home</Link>
                         <Link href='/' className='mx-4 text-[#ccf381]'>About</Link>
@@ -28,7 +28,7 @@ export default function Herosection1() {
                         <li className='mx-4 text-[#ccf381]'>Conatct</li>
                         <li className='mx-4 text-[#ccf381]'>Project</li>
                     </ul>
-                </div>
+                </nav>
             </div>
 
 
