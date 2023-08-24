@@ -6,12 +6,23 @@ import Herosection3 from './Component/Herosection3'
 import Herosection4 from './Component/Herosection4'
 import ContactForm from './Component/ContactForm'
 import Footer from './Component/Footer'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
+    <>
+    <Head>
+      <title>Bengali Coder</title>
+      <meta charset="UTF-8"/>
+      <meta name="description" content="Coding blog and developer portfolio website"/>
+      <meta name="keywords" content="HTML, CSS, JavaScript , Next JS , Langchain ,Python , Web Developer"/>
+      <meta name="author" content="Shahid Ali"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </Head>
+     <main
       className=''
     >
          <div className='w-screen h-screen'>
@@ -35,5 +46,7 @@ export default function Home() {
 
      
     </main>
+    </>
+   
   )
 }
