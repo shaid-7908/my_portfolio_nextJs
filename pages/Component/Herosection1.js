@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import {motion} from 'framer-motion'
 import TransitionPage from './Transitionpage'
+import Particles1 from './Particles1'
 
 export default function Herosection1() {
     const router = useRouter()
@@ -24,7 +25,7 @@ export default function Herosection1() {
                     <ul className='flex justify-around text-lgn tracking-wider font-semibold '>
                         <Link href='/' className='mx-4 text-[#ccf381]'>Home</Link>
                         <Link href='/' className='mx-4 text-[#ccf381]'>About</Link>
-                        <Link href='/' className='mx-4 text-[#ccf381]'>Blog</Link>
+                        <Link href='/Blog' className='mx-4 text-[#ccf381]'>Blog</Link>
                         <li className='mx-4 text-[#ccf381]'>Conatct</li>
                         <li className='mx-4 text-[#ccf381]'>Project</li>
                     </ul>
@@ -44,6 +45,7 @@ export default function Herosection1() {
                     
                 </div>
                 <div className=' flex-1 p-3 relative'>
+                    <Particles1/>
                     {/* <Particles1/> */}
                                        
                     {/*for mid screen */}
