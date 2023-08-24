@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import Image from 'next/image'
 
 export default function Herosection3() {
   return (
@@ -20,7 +21,7 @@ export default function Herosection3() {
                  startup through building multiple React applications into a single robust learning platform.</p>
         </motion.div>
         <div className='flex-1 p-8 border-4 border-[#ccf381]'>
-            <img className='text-center' src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966" alt="coding"/>
+            <Image width={500} height={400} className='text-center' src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966" alt="coding"/>
         </div>
     </div>
   )
