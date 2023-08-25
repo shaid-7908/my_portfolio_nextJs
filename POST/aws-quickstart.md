@@ -1,7 +1,7 @@
 ---
-title: "Getting Started with AWS provided guide offers a comprehensive introduction to AWS and cloud computing."
+title: "Getting Started with AWS ."
 subtitle: "Create an AWS account and set up CLI/SDK access."
-summary: "The provided guide offers a comprehensive introduction to AWS and cloud computing. It walks through setting up an AWS account, installing the AWS CLI, creating an IAM user, and configuring the CLI. The benefits of choosing AWS are highlighted, including its extensive services and market share. The guide also emphasizes the advantages of serverless computing for cost-effective projects. It suggests official documentation, videos, and courses for further learning."
+summary: "The provided guide offers a comprehensive introduction to AWS and cloud computing. It walks through setting up an AWS account"
 date: "2020-12-27"
 ---
 

@@ -15,7 +15,7 @@ export default function Home() {
     <>
     <Head>
       <title>Bengali Coder</title>
-      <meta charset="UTF-8"/>
+      <meta charSet="UTF-8"/>
       <meta name="description" content="Coding blog and developer portfolio website"/>
       <meta name="keywords" content="HTML, CSS, JavaScript , Next JS , Langchain ,Python , Web Developer"/>
       <meta name="author" content="Shahid Ali"/>
@@ -40,9 +40,7 @@ export default function Home() {
          <div className='w-screen max-h-fit'>
           <ContactForm/>
          </div>
-         <div className='w-screen h-[70vh] bg-[#3D155F]'>
-          <Footer/>
-         </div>
+         
 
      
     </main>

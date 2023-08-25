@@ -23,8 +23,9 @@ export default function index({frontmatter:{title,date},content,slug}) {
             </div>
         </div>
 
-        <div className='flex justify-center my-5'>
-        <article className="prose md:prose-lg prose-h1:text-[#4831d4] 
+        <div className='md:flex md:justify-center md:w-[70%] my-5 mx-[20px] md:mx-2'>
+        <article className="prose prose-sm md:prose-lg prose-h1:text-[#4831d4] 
+        max-w-none
         prose-h1:text-3xl 
         prose-h1:font-bold
         prose-headings:text-gray-800 

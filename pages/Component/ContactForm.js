@@ -26,17 +26,17 @@ export default function ContactForm() {
         <div className=' flex justify-center '>
           <div className='grid w-[90%] md:w-[60%]  grid-cols-4 grid-rows-3 md:grid-rows-2 gap-x-2 gap-y-8'>
                <div className='col-span-4 md:col-span-2 border-b-[1px] border-black'>
-               <h3>Your Name</h3>
+               <span>Your Name</span>
                <input className='py-2 outline-none'  type='text' placeholder='Enter Your name'/>
                </div>
                <div className='col-span-4 md:col-span-2 border-b-[1px] border-black '>
-               <h3>Email Address</h3>
+               <span>Email Address</span>
                       <input className='py-2 outline-none' type='text' placeholder='Email Address'/>
                </div>
                <div className='border-b-[1px] border-black col-span-4'>
-               <h3 className=''>
+               <span className=''>
                      Your Message
-                  </h3>
+                  </span>
              <input type='text' className='outline-none py-2' placeholder='Your Message'/>
                </div>
           </div>
@@ -46,7 +46,7 @@ export default function ContactForm() {
                 <div className='flex-1 my-4  
                                 border-b-[1px] 
                                 border-gray-500  ml-4'>
-                    <h3>Your Name</h3>
+                    <span>Your Name</span>
                     <input className='py-2 outline-none'  type='text' placeholder='Enter Your name'/>
                 </div>
             </div>
@@ -54,7 +54,7 @@ export default function ContactForm() {
                 <div className='flex-1 my-4  
                                 border-b-[1px] border-gray-500  
                                 ml-4'>
-                      <h3>Email Address</h3>
+                      <span>Email Address</span>
                       <input className='py-2 outline-none' type='text' placeholder='Email Address'/>
                 </div>
             </div>
@@ -64,9 +64,9 @@ export default function ContactForm() {
             <div className='w-[90%] md:w-[60%] 
                             border-b-[1px] border-gray-500 
                             font-popins my-8  py-2 '>
-                  <h3 className='py-2'>
+                  <span className='py-2'>
                      Your Message
-                  </h3>
+                  </span>
              <input type='text' className='outline-none' placeholder='Your Message'/>
             </div>
             

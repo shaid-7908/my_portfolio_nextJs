@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation'
 import {motion} from 'framer-motion'
 import TransitionPage from './Transitionpage'
 import Particles1 from './Particles1'
+import Navbar from './Navbar'
 
 export default function Herosection1() {
     const router = useRouter()
@@ -15,26 +16,14 @@ export default function Herosection1() {
   return (
     <AnimatePresence mode='wait'>
     <motion.div key={router.route} className='herosectionBg'>
-        {/* <TransitionPage/> */}
+        <TransitionPage/>
         <div className='containerWrap2'>
          
-        <div className='p-3 flex justify-start items-center font-popins relative '>
-                <h1 className='text-2xl text-[#ccf381] font-bold tracking-wider mx-4'>BengaliCoder</h1>
-               {/* <Navbar barcolor="#ccf381"/> */}
-                <nav className='hidden lg:block'>
-                    <ul className='flex justify-around text-lgn tracking-wider font-semibold '>
-                        <Link href='/' className='mx-4 text-[#ccf381]'>Home</Link>
-                        <Link href='/' className='mx-4 text-[#ccf381]'>About</Link>
-                        <Link href='/Blog' className='mx-4 text-[#ccf381]'>Blog</Link>
-                        <li className='mx-4 text-[#ccf381]'>Conatct</li>
-                        <li className='mx-4 text-[#ccf381]'>Project</li>
-                    </ul>
-                </nav>
-            </div>
+       
 
 
             <div className='flex flex-col lg:flex-row'>
-                <div  className=' flex-1 p-3 '>
+                <div  className=' flex-1 p-3 mt-[40px]'>
                     <div className='text-5xl lg:text-7xl font-bold my-4 text-[#ccf381] p-3'>
                         <h1>Full Stack</h1>
                         <h1>Developer</h1>
@@ -44,7 +33,7 @@ export default function Herosection1() {
                     </div>
                     
                 </div>
-                <div className=' flex-1 p-3 relative'>
+                <div className=' flex-1 p-3 relative  mt-[40px]'>
                     <Particles1/>
                     {/* <Particles1/> */}
                                        

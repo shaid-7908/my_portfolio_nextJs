@@ -9,29 +9,18 @@ import Link from 'next/link';
 export default function index({posts}) {
   return (
     <>
-    <div className='bg-slate-50'>
+    <div className='bg-slate-300'>
         <div className='containerWrap2 '>
 
-              {/* <Navbar barcolor={"#4831d4"}/> */}
+             
+             
+             <div className='grid grid-cols-5 gap-3 '>
+              <div className='col-span-3 mt-[50px]'>
 
-             <div className='p-3 flex justify-start items-center font-popins relative '>
-            <h1 className='text-2xl text-[#4831d4] font-bold tracking-wider '>BengaliCoder</h1>
-           {/* <Navbar barcolor='#4831d4'/> */}
-            <div className='hidden lg:block'>
-                <ul className='flex justify-around text-lgn tracking-wider font-semibold '>
-                    <Link href='/' className='mx-4 text-[#4831d4]'>Home</Link>
-                    <Link href='/About' className='mx-4 text-[#4831d4]'>About</Link>
-                    <li className='mx-4 text-[#4831d4]'>Blog</li>
-                    <li className='mx-4 text-[#4831d4]'>Conatct</li>
-                    <li className='mx-4 text-[#4831d4]'>Project</li>
-                </ul>
-            </div>
-             </div>
-
-             <div className='grid grid-cols-4 gap-4'>
+              
            {posts.map((blog,index)=>(
             
-            <div className='border-b-2 p-2 col-span-2 my-4 shadow-md' key={index}>
+            <div className='border-b-2 p-2 col-span-3 my-4 shadow-md bg-white' key={index}>
               <span className='text-gray-500 text-xs'>{blog.date}</span>
               <h1 className='text-xl my-2 font-bold text-[#4831d4]'>{blog.title}</h1>
               <p className='text-gray-500 text-[0.90rem] font-popins'>{blog.summary}</p>
@@ -50,14 +39,17 @@ export default function index({posts}) {
             </div>
             
            ))}
+           </div>
+           <div className='col-span-2'>
+            h
+           </div>
+         
              </div>
 
 
         </div>
     </div>
-    <div className='w-screen h-[70vh] bg-[#3D155F]'>
-        <Footer/>
-    </div>
+    
     
     </>
   )
